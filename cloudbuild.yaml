@@ -11,3 +11,4 @@ steps:
       - gs://pruebacubo
       - --source=./mi_funcion
       - --allow-unauthenticated
+      
