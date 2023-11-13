@@ -1,0 +1,13 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - functions
+      - deploy
+      - funcion_prueba
+      - --region=europe-west1
+      - --runtime
+      - --python39
+      - --trigger-bucket
+      - gs://pruebacubo
+      - --source=./mi_funcion
+      - --allow-unauthenticated
